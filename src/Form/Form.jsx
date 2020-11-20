@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
-import Input from './Input';
+import Input from './Input'
+
 
 function formReducer(prevState, { value, key }) {
     const updatedElement = { ...prevState[key] };
@@ -21,17 +22,20 @@ const initialForm = {
     },
     password: {
         label: 'Password',
+        type: 'password',
         value: '',
     },
     cellnumber: {
         label: 'CellNumber',
+        type: 'tel',
         value: '',
     },
     city: {
         label: 'City',
         value: '',
+        type: 'text',
     },
-
+  
 };
 
 
