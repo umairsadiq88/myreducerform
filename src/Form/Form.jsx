@@ -26,7 +26,7 @@ const initialForm = {
         value: '',
     },
     cellnumber: {
-        label: 'CellNumber',
+        label: 'Cell Number',
         type: 'tel',
         value: '',
     },
@@ -35,7 +35,10 @@ const initialForm = {
         value: '',
         type: 'text',
     },
-  
+    submit: {
+        type: 'submit',
+    },
+
 };
 
 
@@ -45,19 +48,25 @@ const Form = () => {
 const [state, dispatch] = useReducer(formReducer, initialForm);
 
     return (
-        <div>
-            <form>
+        <>
+        <div className="InputStyle">
+        <h1> React useReducer Form </h1>
+        
+            <form >
                 {Object.keys(state).map(key => (
                     <Input
                         changed={({ target: { value } }) => dispatch({ value, key })}
                         key={key}
                         id={key}
                         value={state[key].value}
+                        type={state[key].type}
                         label={state[key].label}
+
                     />
                 ))}
             </form>
         </div>
+        </>
     );
 };
 

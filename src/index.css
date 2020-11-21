@@ -1,13 +1,62 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0px;
+    padding: 150px;
+    background-color: cornflowerblue;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1{
+    text-align: center;
+    font-weight: bolder; 
 }
+
+
+  
+
+
+
+.InputStyle{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: #45a049;
+    font-size: 3vh;
+    font-weight: bold;   
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.InputStyle, input{
+    margin: 10px 0;
+    border-radius: 6px;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+input:focus {
+    background-color: skyblue;
+    border: 4px solid #555;
+}
+input:hover{
+    background-color: teal;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(39, 39, 163);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: skyblue;
+    color: black;
+}
+
