@@ -24,6 +24,7 @@ const initialForm = {
         label: 'Password',
         type: 'password',
         value: '',
+        
     },
     cellnumber: {
         label: 'Cell Number',
